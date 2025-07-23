@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>Retro Calculator</title>
 </head>
 <body>
-    <script src="./script.js"></script>
+<a class="nes-btn myclass" href="#">Normal</a>
+<button type="button" class="nes-btn is-primary">Primary</button>
+<button type="button" class="nes-btn is-success">Success</button>
+<button type="button" class="nes-btn is-warning">Warning</button>
+<button type="button" class="nes-btn is-error">Error</button>
+<button type="button" class="nes-btn is-disabled">Disabled</button>
+
+<label class="nes-btn">
+  <span>Select your file</span>
+  <input type="file">
+</label>
+    <script src="./scripts/script.js"></script>
+    <script src="./node_modules/nes.css/scripts/getFileAsDataURI.js"></script>
+    <script src="./node_modules/nes.css/scripts/getBuildData.js"></script>
+    <script src="./node_modules/nes.css/scripts/scssFunctions.js"></script>
+    <script src="./node_modules/nes.css/scripts/updatePackageHeader.js"></script>
 </body>
 </html>

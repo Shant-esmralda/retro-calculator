@@ -1,0 +1,24 @@
+{
+  "name": "retro-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shant-esmralda/retro-calculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Shant-esmralda/retro-calculator/issues"
+  },
+  "homepage": "https://github.com/Shant-esmralda/retro-calculator#readme",
+  "dependencies": {
+    "nes.css": "^2.2.1"
+  }
+}

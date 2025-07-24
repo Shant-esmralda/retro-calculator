@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>Retro Calculator</title>
-</head>
-<body>
-<a class="nes-btn myclass" href="#">Normal</a>
-<button type="button" class="nes-btn is-primary">Primary</button>
-<button type="button" class="nes-btn is-success">Success</button>
-<button type="button" class="nes-btn is-warning">Warning</button>
-<button type="button" class="nes-btn is-error">Error</button>
-<button type="button" class="nes-btn is-disabled">Disabled</button>
+  </head>
+  <body>
+    <div class="container">
+      <section class="nes-container with-title">
+        <h3 class="title">NES Calculator</h3>
+        <div class="main-grid">
+          <button type="button" class="nes-btn is-primary">7</button>
+          <button type="button" class="nes-btn is-primary">8</button>
+          <button type="button" class="nes-btn is-primary">9</button>
+          <button type="button" class="nes-btn is-primary">+</button>
+          <button type="button" class="nes-btn is-primary">4</button>
+          <button type="button" class="nes-btn is-primary">5</button>
+          <button type="button" class="nes-btn is-primary">6</button>
+          <button type="button" class="nes-btn is-primary">-</button>
+          <button type="button" class="nes-btn is-primary">1</button>
+          <button type="button" class="nes-btn is-primary">2</button>
+          <button type="button" class="nes-btn is-primary">3</button>
+          <button type="button" class="nes-btn is-primary">X</button>
+          <button type="button" class="nes-btn is-primary">C</button>
+          <button type="button" class="nes-btn is-primary">0</button>
+          <button type="button" class="nes-btn is-success">=</button>
+          <button type="button" class="nes-btn is-primary">/</button>
+        </div>
+      </section>
+    </div>
 
-<label class="nes-btn">
-  <span>Select your file</span>
-  <input type="file">
-</label>
+    <!-- SCRIPTS -->
     <script src="./scripts/script.js"></script>
     <script src="./node_modules/nes.css/scripts/getFileAsDataURI.js"></script>
     <script src="./node_modules/nes.css/scripts/getBuildData.js"></script>
     <script src="./node_modules/nes.css/scripts/scssFunctions.js"></script>
     <script src="./node_modules/nes.css/scripts/updatePackageHeader.js"></script>
-</body>
+  </body>
 </html>

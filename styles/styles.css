@@ -6,8 +6,25 @@ body {
     border-image-repeat: stretch !important;
 }
 
+
 .nes-btn input[type="file"] {
     position: absolute;
     pointer-events: none;
     opacity: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.nes-container {
+    margin-top: 2rem;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
 }

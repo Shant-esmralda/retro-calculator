@@ -1,31 +1,40 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 * {
-    border-image-repeat: stretch !important;
+  border-image-repeat: stretch !important;
 }
 
-
 .nes-btn input[type="file"] {
-    position: absolute;
-    pointer-events: none;
-    opacity: 0;
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.nes-btn-primary-keyboard::after {
+  position: absolute !important;
+  top: -4px !important;
+  right: -4px !important;
+  bottom: -4px !important;
+  left: -4px !important;
+  content: "" !important;
+  box-shadow: inset 4px 4px #006bb3 !important;
 }
 
 .container {
-    max-width: 400px;
-    margin: 0 auto;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .nes-container {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .main-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 1rem;
-    margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
 }

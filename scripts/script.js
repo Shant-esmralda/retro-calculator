@@ -1,6 +1,5 @@
-// Get a reference to the button
+// BUTTON 7 KEYBOARD BIND
 const btn7 = document.getElementById("btn7");
-
 // Add a keydown event listener to the document
 document.addEventListener("keydown", function (event) {
   // Check if the pressed key is '7'
@@ -16,8 +15,8 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
+// BUTTON 8 KEYBOARD BIND
 const btn8 = document.getElementById("btn8");
-
 // Add a keydown event listener to the document
 document.addEventListener("keydown", function (event) {
   // Check if the pressed key is '7'

@@ -1,5 +1,14 @@
+/* NES CONSOLE COLOR PALETTE
+#0d0c0c
+#a5a2a2
+#e5e5e5
+#ffffff
+#dd2020
+ */
+
 body {
   margin: 0;
+  background-color: #e5e5e5;
 }
 
 * {
@@ -31,6 +40,7 @@ body {
 .container {
   max-width: 400px;
   margin: 0 auto;
+  background-color: #a5a2a2;
 }
 
 .nes-container {

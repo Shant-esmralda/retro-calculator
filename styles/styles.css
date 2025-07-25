@@ -12,15 +12,21 @@ body {
   opacity: 0;
 }
 
+.nes-btn-warning-keyboard::after {
+  box-shadow: inset 4px 4px #e59400 !important;
+}
+
 .nes-btn-primary-keyboard::after {
-  position: absolute !important;
-  top: -4px !important;
-  right: -4px !important;
-  bottom: -4px !important;
-  left: -4px !important;
-  content: "" !important;
   box-shadow: inset 4px 4px #006bb3 !important;
 }
+.nes-btn-success-keyboard::after {
+  box-shadow: inset 4px 4px #4aa52e !important;
+}
+
+.nes-btn-error-keyboard::after {
+  box-shadow: inset 4px 4px #8c2022 !important;
+}
+
 
 .container {
   max-width: 400px;

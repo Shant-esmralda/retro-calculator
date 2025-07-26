@@ -40,11 +40,17 @@ body {
 .container {
   max-width: 400px;
   margin: 0 auto;
-  background-color: #a5a2a2;
 }
 
 .nes-container {
   margin-top: 2rem;
+  background-color: #a5a2a2;
+  border-radius: 5%;
+}
+
+.title {
+  background-color: #e5e5e5 !important;
+  border-radius: 10%;
 }
 
 .main-grid {

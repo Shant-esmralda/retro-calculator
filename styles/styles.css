@@ -60,3 +60,9 @@ body {
   gap: 1rem;
   margin-top: 1rem;
 }
+
+#display {
+  background-color: #212529;
+  color: white;
+  pointer-events: none;
+}

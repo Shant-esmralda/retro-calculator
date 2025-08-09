@@ -28,7 +28,7 @@
 //     });
 //   } else if (event.key === "2") {
 //     btn2.click();
-//     btn2.classList.add("nes-btn-primary-keyboard"); 
+//     btn2.classList.add("nes-btn-primary-keyboard");
 //     document.addEventListener("keyup", function (event) {
 //       btn2.classList.remove("nes-btn-primary-keyboard");
 //     });
@@ -116,27 +116,27 @@
 //     document.addEventListener("keyup", function (event) {
 //       btne.classList.remove("nes-btn-success-keyboard");
 //     });
-//   } 
+//   }
 // });
 
 // Map keys to their corresponding button IDs and classes using nested objects
 const keyMap = {
-  "0": { id: "btn0", class: "nes-btn-primary-keyboard" },
-  "1": { id: "btn1", class: "nes-btn-primary-keyboard" },
-  "2": { id: "btn2", class: "nes-btn-primary-keyboard" },
-  "3": { id: "btn3", class: "nes-btn-primary-keyboard" },
-  "4": { id: "btn4", class: "nes-btn-primary-keyboard" },
-  "5": { id: "btn5", class: "nes-btn-primary-keyboard" },
-  "6": { id: "btn6", class: "nes-btn-primary-keyboard" },
-  "7": { id: "btn7", class: "nes-btn-primary-keyboard" },
-  "8": { id: "btn8", class: "nes-btn-primary-keyboard" },
-  "9": { id: "btn9", class: "nes-btn-primary-keyboard" },
+  0: { id: "btn0", class: "nes-btn-primary-keyboard" },
+  1: { id: "btn1", class: "nes-btn-primary-keyboard" },
+  2: { id: "btn2", class: "nes-btn-primary-keyboard" },
+  3: { id: "btn3", class: "nes-btn-primary-keyboard" },
+  4: { id: "btn4", class: "nes-btn-primary-keyboard" },
+  5: { id: "btn5", class: "nes-btn-primary-keyboard" },
+  6: { id: "btn6", class: "nes-btn-primary-keyboard" },
+  7: { id: "btn7", class: "nes-btn-primary-keyboard" },
+  8: { id: "btn8", class: "nes-btn-primary-keyboard" },
+  9: { id: "btn9", class: "nes-btn-primary-keyboard" },
   "+": { id: "btnp", class: "nes-btn-warning-keyboard" },
   "-": { id: "btnm", class: "nes-btn-warning-keyboard" },
   "*": { id: "btnx", class: "nes-btn-warning-keyboard" },
   "/": { id: "btnd", class: "nes-btn-warning-keyboard" },
-  "c": { id: "btnc", class: "nes-btn-error-keyboard" },
-  "=": { id: "btne", class: "nes-btn-success-keyboard" }
+  c: { id: "btnc", class: "nes-btn-error-keyboard" },
+  "=": { id: "btne", class: "nes-btn-success-keyboard" },
 };
 
 // Track all currently active keys
@@ -155,8 +155,7 @@ document.addEventListener("keydown", function (event) {
       activeKeys.add(key);
     }
   }
- }
-);
+});
 
 document.addEventListener("keyup", function (event) {
   const key = event.key;
@@ -170,3 +169,11 @@ document.addEventListener("keyup", function (event) {
     activeKeys.delete(key);
   }
 });
+
+function appendNumber(number) {
+  document.getElementById("display").value += number;
+}
+
+function clearDisplay() {
+  document.getElementById("display").value = "";
+}

@@ -25,22 +25,22 @@
           <input type="text" class="nes-input" id="display" placeholder="00000000000000">
         </div>
         <main class="main-grid">
-          <button type="button" id="btn7" class="nes-btn is-primary">7</button>
-          <button type="button" id="btn8" class="nes-btn is-primary">8</button>
-          <button type="button" id="btn9" class="nes-btn is-primary">9</button>
-          <button type="button" id="btnp" class="nes-btn is-warning">+</button>
-          <button type="button" id="btn4" class="nes-btn is-primary">4</button>
-          <button type="button" id="btn5" class="nes-btn is-primary">5</button>
-          <button type="button" id="btn6" class="nes-btn is-primary">6</button>
-          <button type="button" id="btnm" class="nes-btn is-warning">-</button>
-          <button type="button" id="btn1" class="nes-btn is-primary">1</button>
-          <button type="button" id="btn2" class="nes-btn is-primary">2</button>
-          <button type="button" id="btn3" class="nes-btn is-primary">3</button>
-          <button type="button" id="btnx" class="nes-btn is-warning">X</button>
-          <button type="button" id="btnc" class="nes-btn is-error">C</button>
-          <button type="button" id="btn0" class="nes-btn is-primary">0</button>
-          <button type="button" id="btne" class="nes-btn is-success">=</button>
-          <button type="button" id="btnd" class="nes-btn is-warning">/</button>
+          <button onclick="appendNumber('7')" type="button" id="btn7" class="nes-btn is-primary">7</button>
+          <button onclick="appendNumber('8')" type="button" id="btn8" class="nes-btn is-primary">8</button>
+          <button onclick="appendNumber('9')" type="button" id="btn9" class="nes-btn is-primary">9</button>
+          <button onclick="appendOperation('+')" type="button" id="btnp" class="nes-btn is-warning">+</button>
+          <button onclick="appendNumber('4')" type="button" id="btn4" class="nes-btn is-primary">4</button>
+          <button onclick="appendNumber('5')" type="button" id="btn5" class="nes-btn is-primary">5</button>
+          <button onclick="appendNumber('6')" type="button" id="btn6" class="nes-btn is-primary">6</button>
+          <button onclick="appendOperation('-')" type="button" id="btnm" class="nes-btn is-warning">-</button>
+          <button onclick="appendNumber('1')" type="button" id="btn1" class="nes-btn is-primary">1</button>
+          <button onclick="appendNumber('2')" type="button" id="btn2" class="nes-btn is-primary">2</button>
+          <button onclick="appendNumber('3')" type="button" id="btn3" class="nes-btn is-primary">3</button>
+          <button onclick="appendOperation('X')" type="button" id="btnx" class="nes-btn is-warning">X</button>
+          <button onclick="clearDisplay()" type="button" id="btnc" class="nes-btn is-error">C</button>
+          <button onclick="appendNumber('0')" type="button" id="btn0" class="nes-btn is-primary">0</button>
+          <button onclick="calculate()" type="button" id="btne" class="nes-btn is-success">=</button>
+          <button onclick="appendOperation('/')" type="button" id="btnd" class="nes-btn is-warning">/</button>
         </main>
       </section>
       <section class="nes-container with-title">

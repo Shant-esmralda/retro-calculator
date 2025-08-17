@@ -136,7 +136,7 @@ const keyMap = {
   "*": { id: "btnx", class: "nes-btn-warning-keyboard" },
   "/": { id: "btnd", class: "nes-btn-warning-keyboard" },
   c: { id: "btnc", class: "nes-btn-error-keyboard" },
-  "=": { id: "btne", class: "nes-btn-success-keyboard" },
+  "Enter": { id: "btne", class: "nes-btn-success-keyboard" },
 };
 
 // Track all currently active keys
@@ -186,4 +186,21 @@ function appendNumber(number) {
 
 function clearDisplay() {
   document.getElementById("display").value = "";
+}
+
+Object.keys(keyMap).forEach(key => {
+  if (["+", "-", "*", "/"].includes(key)) {
+    const btn = document.getElementById(keyMap[key].id);
+    if (btn) {
+      btn.addEventListener("click", function() {
+        appendOperation(key);
+      });
+    }
+  }
+});
+
+function appendOperation(operator) {
+  if (!["+", "-", "*", "/"].includes(document.getElementById("display").value.slice(-1))) {
+    document.getElementById("display").value += operator;
+  }
 }

@@ -145,7 +145,7 @@ const activeKeys = new Set();
 document.addEventListener("keydown", function (event) {
   const key = event.key;
   const mapping = keyMap[key];
-
+  
   if (mapping && !event.repeat && !activeKeys.has(key)) {
     const btn = document.getElementById(mapping.id);
     if (btn) {
@@ -153,6 +153,7 @@ document.addEventListener("keydown", function (event) {
       btn.click();
       btn.classList.add(mapping.class);
       activeKeys.add(key);
+      
     }
   }
 });
@@ -169,6 +170,15 @@ document.addEventListener("keyup", function (event) {
     activeKeys.delete(key);
   }
 });
+
+for (let i = 0; i <= 9; i++) {
+  const btnAdd = document.getElementById(`btn${i}`);
+  if (btnAdd) {
+    btnAdd.addEventListener("click", function() {
+      appendNumber(String(i));
+    })
+  }
+}
 
 function appendNumber(number) {
   document.getElementById("display").value += number;

@@ -14,6 +14,7 @@ const keyMap = {
   "*": { id: "btnx", class: "nes-btn-warning-keyboard" },
   "/": { id: "btnd", class: "nes-btn-warning-keyboard" },
   c: { id: "btnc", class: "nes-btn-error-keyboard" },
+  C: { id: "btnc", class: "nes-btn-error-keyboard" },
   "Enter": { id: "btne", class: "nes-btn-success-keyboard" },
 };
 
@@ -57,7 +58,7 @@ Object.keys(keyMap).forEach(key => {
     btn.addEventListener("click", () => appendNumber(key));
   } else if (["+", "-", "*", "/"].includes(key)) {
     btn.addEventListener("click", () => appendOperation(key));
-  } else if (key === "c") {
+  } else if (["c", "C"].includes(key)) {
     btn.addEventListener("click", clearDisplay);
   } else if (key === "Enter") {
     btn.addEventListener("click", calculate);

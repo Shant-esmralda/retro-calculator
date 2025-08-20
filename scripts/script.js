@@ -65,32 +65,35 @@ Object.keys(keyMap).forEach(key => {
   }
 });
 
+const display = document.getElementById("display");
+
 function appendNumber(number) {
-  document.getElementById("display").value += number;
+  display.value += number;
 }
 
 function clearDisplay() {
-  document.getElementById("display").value = "";
+  display.value = "";
 }
 
 function appendOperation(operator) {
-  if (!["+", "-", "*", "/"].includes(document.getElementById("display").value.slice(-1))) {
-    document.getElementById("display").value += operator;
+  if (!["+", "-", "*", "/"].includes(display.value.slice(-1))) {
+    if (display.value.length < 11) {
+      display.value += operator;
+    }
   }
 }
 
 function calculate() {
   try {
-    const result = eval(document.getElementById("display").value);
-      document.getElementById("display").value = result.toString();
+    const result = eval(display.value);
+      display.value = result.toString();
 
   } catch (error) {
-    document.getElementById("display").value = "Error";
+    display.value = "Error";
   }
 } 
 
 function appendNumber(number) {
-  const display = document.getElementById("display");
   if (display.value.length < 12) {
     display.value += number;
   }

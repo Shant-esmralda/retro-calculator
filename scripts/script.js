@@ -88,3 +88,10 @@ function calculate() {
     document.getElementById("display").value = "Error";
   }
 } 
+
+function appendNumber(number) {
+  const display = document.getElementById("display");
+  if (display.value.length < 12) {
+    display.value += number;
+  }
+}
